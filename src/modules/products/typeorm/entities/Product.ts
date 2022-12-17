@@ -15,7 +15,7 @@ export default class Product {
     quantity:number;
 
     @CreateDateColumn()
-    create_at:Date;
+    created_at:Date;
     
     @CreateDateColumn()
     updated_at:Date;

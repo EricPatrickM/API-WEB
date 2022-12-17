@@ -23,7 +23,7 @@ export default class productsController{
         const {name, price, quantity} = request.body;
         const createProduct = new createProductService();
         const products = await createProduct.execute({name, price, quantity});
-        return response.json(products) 
+        return response.json(products)
     }
 
     public async update(request: Request, response:Response):Promise <Response>{
