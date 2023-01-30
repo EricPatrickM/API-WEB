@@ -18,6 +18,7 @@ productRouter.post('/', celebrate({
         quantity:Joi.number().required()
     }
 }),productController.create)
+
 productRouter.put('/:id', celebrate({
     [Segments.PARAMS]: {
         id:Joi.string().uuid().required()
@@ -28,6 +29,7 @@ productRouter.put('/:id', celebrate({
         quantity:Joi.number().required()
     }
 }),productController.update)
+
 productRouter.delete('/:id',celebrate({
     [Segments.PARAMS]: {
         id:Joi.string().uuid().required()
